@@ -1,0 +1,175 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #DFF2EB;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid #7AB2D3;
+  background-color: #B9E5E8;
+  overflow-y: auto;
+  min-height: 100vh; /* Ensures the .App container takes full viewport height */
+}
+
+header {
+  width: 100%;
+  padding: 0.2em; 
+  background-color: #7AB2D3;
+  color: #FFFFFF; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.0rem; 
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  padding: 0.5rem;
+  background-color: #B9E5E8;
+  color: #110702;
+  flex-grow: 1; /* Allows main content to grow and push footer to the bottom */
+}
+
+footer {
+  width: 100%;
+  padding: 0.5em;
+  background-color: #7AB2D3;
+  color: #FFFFFF; 
+  display: grid;
+  place-content: center;
+  font-size: 1rem;
+  flex-shrink: 0; /* Ensures footer stays at the bottom without shrinking */
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.5rem 0.5rem;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem; 
+  margin: 0.4rem 0; 
+  background-color: #DFF2EB;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.item > label {
+  font-size: 0.9rem; 
+  flex-grow: 1;
+  color: #110702;
+}
+
+.item input[type="checkbox"] {
+  width: 36px; 
+  height: 36px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.item svg {
+  width: 30px; 
+  height: 30px;
+  font-size: 1.3rem; 
+  color: #7AB2D3; 
+  cursor: pointer;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color: red;
+  outline: none;
+}
+
+.addForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #7AB2D3;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  border: 1px solid #7AB2D3; 
+  background-color: #FFFFFF; 
+  color: #110702; 
+}
+
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #7AB2D3;
+  color: #FFFFFF; 
+  cursor: pointer;
+  border: none;
+}
+
+button:focus, 
+button:hover {
+  background-color: #B9E5E8; 
+  color: #110702; 
+  outline: none;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #7AB2D3;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #7AB2D3; 
+  background-color: #FFFFFF; 
+  color: #110702; 
+}
