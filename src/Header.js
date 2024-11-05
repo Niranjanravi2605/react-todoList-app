@@ -1,5 +1,4 @@
 import React from 'react';
-import { MdEditNote } from "react-icons/md";
 
 const Header = ({ title = "to do list" }) => {
   return (
@@ -9,4 +8,4 @@ const Header = ({ title = "to do list" }) => {
   );
 };
 
-export default Header;
+export default Header; 

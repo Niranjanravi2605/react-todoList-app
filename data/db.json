@@ -1,11 +1,6 @@
 {
   "items": [
     {
-      "id": "1",
-      "checked": true,
-      "item": "play cricket"
-    },
-    {
       "id": "31",
       "checked": false,
       "item": "Do exercise"
